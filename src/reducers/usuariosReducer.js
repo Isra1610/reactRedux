@@ -9,7 +9,7 @@ const INITIAL_STATE = {
 export default (state = INITIAL_STATE, action) => {
 	switch (action.type) {
 		case TRAER_TODOS:
-			return { ...state, usuarios: action.payload, loading: false };
+			return { ...state, usuarios: action.payload, loading: false, error: "" };
 
 		case LOADING:
 			return { ...state, loading: true };
